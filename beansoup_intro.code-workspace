@@ -4,5 +4,36 @@
 			"path": "."
 		}
 	],
-	"settings": {}
+	"settings": {
+		"cSpell.words": [
+			"Accusamus",
+			"adipisicing",
+			"amet",
+			"architecto",
+			"asperiores",
+			"atque",
+			"consectetur",
+			"corporis",
+			"corrupti",
+			"Deleniti",
+			"dignissimos",
+			"distinctio",
+			"doloremque",
+			"elit",
+			"facere",
+			"Janeth",
+			"labore",
+			"laborum",
+			"omnis",
+			"optio",
+			"repellendus",
+			"repudiandae",
+			"Rerum",
+			"similique",
+			"soluta",
+			"Totam",
+			"Ullam",
+			"veniam"
+		]
+	}
 }
