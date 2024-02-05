@@ -22,4 +22,6 @@ result = soup.find_all("div", class_='row')
 # print(result)
 
 for row in result:
-    print(row.prettify(), end='\n\n'*4)
+    # print(row.prettify(), end='\n\n'*4)
+    row_heading = row.find("h3", id='page-heading')
+    print(row_heading)
