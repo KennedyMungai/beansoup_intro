@@ -30,4 +30,6 @@ result = soup.find_all("div", class_='row')
 
 h3_heading = soup.find("h3", string='Welcome to my NFT market place..!!')
 
-print(h3_heading)
+h3_header = soup.find_all('h3', string=lambda text: "welcome" in text.lower())
+
+print(h3_header)
