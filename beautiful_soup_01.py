@@ -32,5 +32,16 @@ h3_heading = soup.find("h3", string='Welcome to my NFT market place..!!')
 
 h3_header = soup.find_all('h3', string=lambda text: "section" in text.lower())
 
-for item in h3_header:
-    print(item.text + '\n')
+# for item in h3_header:
+#     print(item.text + '\n')
+
+
+rows = soup.find_all('div', class_='row')
+row_parents = [row_element.parent.parent.parent for row_element in rows]
+# print(row_parents)
+
+# Find a given anchor tag/
+a_tags = soup.find_all('a')
+
+for a_tag in a_tags:
+    print(a_tag['href'])
