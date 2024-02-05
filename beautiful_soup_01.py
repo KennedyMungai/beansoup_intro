@@ -9,4 +9,9 @@ page = requests.get(URL, timeout=300)
 
 soup = BeautifulSoup(page.content, 'html.parser')
 
-print(soup.prettify())
+# print(soup.prettify())
+
+# Finding an element by its ID
+result = soup.find(id='page-heading')
+
+print(result)
