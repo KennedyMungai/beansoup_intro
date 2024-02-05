@@ -14,4 +14,9 @@ soup = BeautifulSoup(page.content, 'html.parser')
 # Finding an element by its ID
 result = soup.find(id='page-heading')
 
-print(result.prettify())
+# print(result.prettify())
+
+# Finding an element by the css classes
+result = soup.find_all("div", class_='row')
+
+print(result)
