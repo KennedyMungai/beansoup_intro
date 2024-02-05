@@ -14,4 +14,4 @@ soup = BeautifulSoup(page.content, 'html.parser')
 # Finding an element by its ID
 result = soup.find(id='page-heading')
 
-print(result)
+print(result.prettify())
