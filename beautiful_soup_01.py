@@ -1,0 +1,1 @@
+"""A simple use case for beautiful soup"""
