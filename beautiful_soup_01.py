@@ -24,4 +24,6 @@ result = soup.find_all("div", class_='row')
 for row in result:
     # print(row.prettify(), end='\n\n'*4)
     row_heading = row.find("h3", id='page-heading')
-    print(row_heading)
+
+    if row_heading is not None:
+        print(row_heading.text)
