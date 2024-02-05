@@ -21,9 +21,13 @@ result = soup.find_all("div", class_='row')
 
 # print(result)
 
-for row in result:
-    # print(row.prettify(), end='\n\n'*4)
-    row_heading = row.find("h3", id='page-heading')
+# for row in result:
+#     # print(row.prettify(), end='\n\n'*4)
+#     row_heading = row.find("h3", id='page-heading')
 
-    if row_heading is not None:
-        print(row_heading.text.lstrip())
+#     if row_heading is not None:
+#         print(row_heading.text.lstrip())
+
+h3_heading = soup.find("h3", string='Welcome to my NFT market place..!!')
+
+print(h3_heading)
