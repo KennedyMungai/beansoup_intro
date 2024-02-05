@@ -19,4 +19,7 @@ result = soup.find(id='page-heading')
 # Finding an element by the css classes
 result = soup.find_all("div", class_='row')
 
-print(result)
+# print(result)
+
+for row in result:
+    print(row.prettify(), end='\n\n'*4)
