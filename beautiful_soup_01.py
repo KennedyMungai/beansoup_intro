@@ -26,4 +26,4 @@ for row in result:
     row_heading = row.find("h3", id='page-heading')
 
     if row_heading is not None:
-        print(row_heading.text)
+        print(row_heading.text.lstrip())
